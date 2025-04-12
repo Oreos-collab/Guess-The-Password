@@ -5,108 +5,87 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: linear-gradient(135deg, #6b7280, #4b5563); /* Cool gray gradient */
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm gradient */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #e5e7eb;
+  color: white;
 }
 
 .game-container {
-  background: rgba(31, 41, 55, 0.95); /* Darker semi-transparent bg */
-  padding: 40px;
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
   text-align: center;
-  max-width: 450px;
+  max-width: 400px;
   width: 100%;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-.win-gif {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  object-fit: cover;
-}
+
 h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 24px;
-  color: #60a5fa; /* Bright blue for heading */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 #message {
-  font-size: 1.3rem;
-  margin-bottom: 24px;
-  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .input-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 input[type="text"] {
   width: 70%;
-  padding: 12px 16px;
-  border-radius: 12px;
-  border: 1px solid #4b5563;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid #fff;
   font-size: 1.1rem;
-  margin-right: 12px;
-  background-color: rgba(55, 65, 81, 0.5);
-  color: #e5e7eb;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
   outline: none;
-  transition: border-color 0.3s ease;
-}
-
-input[type="text"]::placeholder {
-  color: #9ca3af;
 }
 
 input[type="text"]:focus {
-  border-color: #60a5fa;
-  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+  border-color: #ff7e5f;
 }
 
 button {
-  padding: 12px 28px;
-  background-color: #3b82f6; /* Vibrant blue */
+  padding: 12px 25px;
+  background-color: #ff7e5f;
   border: none;
-  border-radius: 12px;
-  color: #fff;
+  border-radius: 30px;
+  color: white;
   font-size: 1.1rem;
-  font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #2563eb;
-  transform: translateY(-2px);
+  background-color: #feb47b;
 }
 
 #resetBtn {
-  padding: 12px 24px;
-  background-color: #ef4444; /* Red for reset */
+  padding: 10px 20px;
+  background-color: #ff3d3d;
   border: none;
-  border-radius: 12px;
-  color: #fff;
+  border-radius: 30px;
+  color: white;
   font-size: 1.1rem;
-  font-weight: 500;
   cursor: pointer;
   display: none;
-  margin-top: 24px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
 }
 
 #resetBtn:hover {
-  background-color: #dc2626;
-  transform: translateY(-2px);
+  background-color: #ff2a2a;
 }
 
 /* Pop-out Congratulations Panel */
@@ -117,42 +96,35 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
 .win-panel-content {
-  background: #1f2937;
-  padding: 40px;
-  border-radius: 16px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
   text-align: center;
-  color: #e5e7eb;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  width: 90%;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .win-panel h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 24px;
-  color: #60a5fa;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .win-panel button {
-  padding: 12px 28px;
-  background-color: #3b82f6;
+  padding: 10px 20px;
+  background-color: #ff7e5f;
   border: none;
-  border-radius: 12px;
-  color: #fff;
+  border-radius: 30px;
+  color: white;
   font-size: 1.1rem;
-  font-weight: 500;
   cursor: pointer;
 }
 
 .win-panel button:hover {
-  background-color: #2563eb;
-  transform: translateY(-2px);
+  background-color: #feb47b;
 }
