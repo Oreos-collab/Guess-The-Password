@@ -150,10 +150,10 @@ button:hover {
   transform: translateY(-2px);
 }
 
-.win-gif {
+.win-image {
   width: 100%;
   max-width: 200px;
-  height: auto;
+  height: 150px;
   margin-bottom: 20px;
   border-radius: 8px;
   object-fit: cover;
